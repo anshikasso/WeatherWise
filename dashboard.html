@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherWise Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+  <div class="content-wrapper">
+    <header class="d-flex flex-wrap align-items-center justify-content-between p-3">
+      <div class="d-flex align-items-center">
+        <img src="images/logo.png" alt="WeatherWise logo" class="logo me-3">
+        <span class="brand d-none d-md-inline">WeatherWise</span>
+      </div>
+      
+      <div class="d-flex align-items-center gap-3 flex-wrap">
+        <form class="search-form" onsubmit="event.preventDefault();">
+          <input type="text" id="city-input" placeholder="Search City" autocomplete="off">
+        </form>
+        <select id="unit-select" class="unit-select" aria-label="Units">
+          <option value="metric">°C</option>
+          <option value="imperial">°F</option>
+          <option value="standard">K</option>
+        </select>
+      </div>
+    </header>
+
+    <!--Main Content-->
+    <main class="container-fluid px-3">
+      <section class="current-weather">
+        <div class="row g-4">
+          <!-- Weather Card -->
+          <div class="col-12 col-lg-4">
+            <div class="weather-card h-100">
+              <div class="weather-card-header">
+                <span id="date-text">--</span>
+                <span id="time-text">--:--</span>
+              </div>
+              <div class="weather-main">
+                <img src="" alt="" class="weather-icon" id="weather-icon">
+                <div class="temp" id="temperature">--° C</div>
+                <div class="location" id="location">--</div>
+                <div class="condition">
+                  Condition: <strong id="condition-text">--</strong><br>
+                  Humidity: <strong id="humidity-text">--%</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Weather Info -->
+          <div class="col-12 col-lg-8">
+            <div class="weather-info h-100 d-flex flex-column">
+              <p class="description flex-grow-1" id="description-text">
+                Enter a city to view the latest weather conditions and forecast.
+              </p>
+              <button class="forecast-btn mb-3" id="forecast-btn">5-Day Forecast</button>
+              
+              <!-- Responsive Forecast Grid -->
+              <div class="row g-2" id="forecast-grid">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
