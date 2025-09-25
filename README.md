@@ -26,7 +26,7 @@ A simple and responsive weather dashboard that allows users to check the **curre
 ## 🚀 How to Run
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/weather-dashboard.git
+   git clone https://github.com/your-username/weatherWise.git
 2.Navigate to the project folder:
 cd weather-dashboard
 3.Open index.html in your browser.
