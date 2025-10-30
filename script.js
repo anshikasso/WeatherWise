@@ -1,5 +1,5 @@
 // OpenWeather integration 
-const OPENWEATHER_API_KEY = '32fdb12a91de899c73cff5136aad9ce7';
+const OPENWEATHER_API_KEY = ' '; //Insert Your API key here 
 //Indian Standard Time
 const IST_OFFSET_SEC = 5.5 * 3600; 
 
